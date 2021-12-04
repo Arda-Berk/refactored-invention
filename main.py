@@ -65,16 +65,16 @@ while True:
             get_players(mappath, scope)  
             FPS = format(round((1.0/(time.time() - start_time)), 2), '.2f')
             print("\r>>>Bot: Çalışıyor. Dürbün modu: {} FPS: {}                                                                  ".format(ScopeMode, FPS), end='')
-        if win32api.GetAsyncKeyState(0x62) < 0: 
+        elif win32api.GetAsyncKeyState(0x62) < 0: 
             scope = 1
             ScopeMode = 2
-        if win32api.GetAsyncKeyState(0x64) < 0: 
+        elif win32api.GetAsyncKeyState(0x64) < 0: 
             scope = 0.75
             ScopeMode = 4
-        if win32api.GetAsyncKeyState(0x68) < 0:
+        elif win32api.GetAsyncKeyState(0x68) < 0:
             scope = 0.5
             ScopeMode = 8
-        if win32api.GetAsyncKeyState(0x11) < 0 and win32api.GetAsyncKeyState(0x54) < 0:
+        elif win32api.GetAsyncKeyState(0x11) < 0 and win32api.GetAsyncKeyState(0x54) < 0:
             errorlogs = dir_path + "\error_logs.txt"
             f = open(errorlogs, "w")
             for exception in exceptions:
