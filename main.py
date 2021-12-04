@@ -26,7 +26,7 @@ def get_screenshot(mappath, scope):
 
 def get_players(mappath, scope):
     x0, y0 = win32api.GetCursorPos()
-    image = io.imread(mappath) #use cv.2imread in case this doesn't work
+    image = io.imread(mappath) #use cv2.imread in case this doesn't work
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     circles = cv2.HoughCircles(gray,cv2.HOUGH_GRADIENT,1,20,param1=50,param2=30,minRadius=0,maxRadius=0) #this might need calibration
     if circles is not None:
