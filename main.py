@@ -55,9 +55,8 @@ print("\n>>>Eğer imleciniz hedefinizin yakınındaysa LSHIFT tuşuna basarak he
 print("\n>>>Bot, sizin için otomatik ateş etmeyecektir, o yüzden hedefinizi düzeltirken sol tık yapmayı unutmayın.")
 print("\n>>>Sayısal tuş takımındaki '2', '4' ve '8' rakamlarına basarak dürbününüzü ayarlayabilirsiniz.")
 print("\n>>>CTRL + T ile hataları error_logs.txt'e kaydederek botu kapatabilirsiniz.")
-print("\n>>>Hesabınız ban yerse bundan siz sorumlusunuz.")
 input("\n>>>Devam etmek istiyorsanız Enter tuşuna basın.")
-print("\n>>>Artık bu ekranı simge durumunda küçültüp oyununuzu normal bir şekilde oynayabilirsiniz.\n")       
+print("\n>>>Artık bu ekranı simge durumunda küçültebilirsiniz.\n")       
 while True:
     try:
         if win32api.GetAsyncKeyState(0x10) < 0:
